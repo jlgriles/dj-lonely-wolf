@@ -1,6 +1,27 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('consent', 'default', {
+			ad_storage: 'denied',
+			ad_user_data: 'denied',
+			ad_personalization: 'denied',
+			analytics_storage: 'denied',
+			wait_for_update: 500
+		});
+		</script>
+
+		<!-- 2. GA4 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y22489K0HY"></script>
+		<script>
+		gtag('js', new Date());
+		gtag('config', 'G-Y22489K0HY', { anonymize_ip: true });
+		</script>
+
+		<!-- 3. Consent banner (after the above, order relative to other page scripts doesn't matter) -->
+		<script src="cookie-consent.js" defer></script>
 		<title>DJ Lonely Wolf | Richmond, VA Club DJ</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
